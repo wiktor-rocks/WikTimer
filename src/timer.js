@@ -155,6 +155,7 @@ function runTimer(minElement,secElement, command){
 
         if (timeSeconds <= 0 && endTrigger == false){
             alarm.play();
+            console.log("alarm playing");
             clearInterval(interval);
             endTrigger = true;
         }
